@@ -1,7 +1,8 @@
-import window
+import screenshot
 
+# Application start
 def main():
-    window.get_active_foreground_window()
+    screenshot.capture_screenshot()
 
 if __name__ == "__main__":
     main()
