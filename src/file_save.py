@@ -10,7 +10,16 @@ def get_directory():
     
     full_path = os.path.join(base_dir, directory_name)
     
-    return base_dir
+    # If directory exists then return it's path else create a new directory and return it's path
+    if (os.path.exists(full_path)):
+        return full_path
+    else:
+        new_path = os.path.join(base_dir, directory_name)
+        try:
+            os.mkdir(new_path)
+            return new_path
+        except OSError as e:
+            print(e)
     
 
 # Create the file name for the screenshot
