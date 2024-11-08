@@ -2,6 +2,7 @@ from PIL import ImageGrab
 import os
 import file_save
 
+
 # Capture the screenshot and save it
 def capture_screenshot():
     try:
@@ -14,5 +15,6 @@ def capture_screenshot():
         # Save the screenshot
         screenshot.save(filepath)
         print("Screenshot saved")
+        
     except Exception as e:
         print(f"Something went wrong: {e}")
