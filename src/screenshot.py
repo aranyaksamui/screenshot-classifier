@@ -10,7 +10,7 @@ def capture_screenshot():
         screenshot = ImageGrab.grab()
         
         # Create a filepath
-        filepath = os.path.join(file_save.get_directory(), file_save.create_filename())
+        filepath = os.path.join(file_save.get_subdirectory(), file_save.create_filename())
         
         # Save the screenshot
         screenshot.save(filepath)
