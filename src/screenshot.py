@@ -1,6 +1,6 @@
 from PIL import ImageGrab
 import os
-import file_save
+import file_handler
 
 
 # Capture the screenshot and save it
@@ -10,7 +10,7 @@ def capture_screenshot():
         screenshot = ImageGrab.grab()
         
         # Create a filepath
-        filepath = os.path.join(file_save.get_subdirectory(), file_save.create_filename())
+        filepath = os.path.join(file_handler.get_subdirectory(), file_handler.create_filename())
         
         # Save the screenshot
         screenshot.save(filepath)
