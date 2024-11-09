@@ -5,6 +5,8 @@ import window
 
 
 base_dir = r"C:\Users\arany\Pictures\Screenshots"
+def create_or_get_base_directory_path():
+    pass
 
 
 # Validate and sanitize directory and filename string
@@ -39,6 +41,7 @@ def return_or_create_path(full_path):
         
         except OSError as e:
             print(e)
+    
     
 # Get save parent directory
 def get_parent_directory():

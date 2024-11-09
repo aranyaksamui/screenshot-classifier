@@ -1,13 +1,14 @@
 import win32gui
 import win32process
 import psutil
-import file_save
+
 
 # Get active window text in the foreground
 def get_active_foreground_window():
     active_HWND_text = win32gui.GetWindowText(win32gui.GetForegroundWindow())
         
     return active_HWND_text
+
 
 # Get the active window application name with process ID
 def get_active_app_name():
