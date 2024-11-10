@@ -24,9 +24,13 @@ Set a base save folder<br>
 
 ## Installation
 
-1. Clone the repository: git clone <https://github.com/yourusername/screenshot-classifier.git>
+1. Clone the repository: git clone <https://github.com/aranyaksamui/screenshot-classifier>
 
 2. Activate the virtual environment:
+
+## Create Virtual Environment in Python:
+
+python -m venv my_project/venv
 
 ## On Unix/Linux/MacOS
 
