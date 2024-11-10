@@ -4,3 +4,5 @@
 /config
 /build
 /dist
+*.zip
+main.spec
