@@ -12,12 +12,15 @@ This is a Python-based screenshot classifier application that uses convolutional
 
 ## Demo
 
-Individual folders for applications
-![Individual folders for applications](/demo/demo1.png)
-Individual folder for tabs in Application
-![Individual folder for tabs in Application](/demo/demo3.png)
-Set a base save folder
-![Set a base save folder](/demo/demo2.png)
+Individual folders for applications<br>
+![Individual folders for applications](/demo/demo1.png)<br>
+Individual folder for tabs in Application<br>
+![Individual folder for tabs in Application](/demo/demo3.png)<br>
+Set a base save folder<br>
+![Set a base save folder](/demo/demo2.png)<br>
+
+## Try it out!
+[Download Zip File](/screenshot_classifier.zip)
 
 ## Installation
 
