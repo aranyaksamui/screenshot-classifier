@@ -2,3 +2,5 @@
 /src/__pycache__
 /src/test.py
 /config
+/build
+/dist
