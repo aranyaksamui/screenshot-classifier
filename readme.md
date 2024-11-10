@@ -4,15 +4,19 @@ This is a Python-based screenshot classifier application that uses convolutional
 
 ## Features
 
-- Capture screenshots automatically using keyboard shortcuts
+- Capture screenshots automatically using keyboard (shift + windows + insert)
+- Automatically save screenshots inside individual folders for individual applications
+- Create a base folder for all the application folders for screenshots
 - Selectable save directory for organized screenshot storage
 - User-friendly graphical interface for easy operation
 
 ## Demo
+
+Individual folders for applications
 ![Individual folders for applications](/demo/demo1.png)
-
+Individual folder for tabs in Application
 ![Individual folder for tabs in Application](/demo/demo3.png)
-
+Set a base save folder
 ![Set a base save folder](/demo/demo2.png)
 
 ## Installation

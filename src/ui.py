@@ -29,6 +29,8 @@ class UI:
         else:
             self.save_label_text.set(file_handler.get_base_save_directory_path())
             base_save_path = ttk.Label(self.root, textvariable=self.save_label_text).pack()
+        
+        shortcut_label = ttk.Label(self.root, text="Press 'shift + windows + insert' for screenshot", font=("Helvetica", 10)).pack()
     
     # Select base save directory dialog
     def select_dir(self):
