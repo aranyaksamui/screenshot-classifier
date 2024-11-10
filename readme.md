@@ -10,7 +10,9 @@ This is a Python-based screenshot classifier application that uses convolutional
 
 ## Demo
 ![Individual folders for applications](/demo/demo1.png)
+
 ![Individual folder for tabs in Application](/demo/demo3.png)
+
 ![Set a base save folder](/demo/demo2.png)
 
 ## Installation
