@@ -30,11 +30,10 @@ def create_or_update_base_directory_path(base_screenshot_dir_path):
     with open(get_config_paths()[1], "w") as config_file:
         json.dump({"savePath": f"{base_screenshot_dir_path}"}, config_file, indent=4)
     
-    get_save_directory_path()
             
         
 # Read the base screenshot save path
-def get_save_directory_path():
+def get_base_save_directory_path():
     if (os.path.exists(get_config_paths()[1])):
         with open(get_config_paths()[1], "r") as config_file:
             config_data = json.load(config_file)
@@ -84,13 +83,12 @@ def get_parent_directory():
     active_foreground_app = window.get_active_app_name()
     directory_name = cleanup_name(active_foreground_app, 1)
     
-    if (get_save_directory_path() != None):
-        full_path = os.path.join(get_save_directory_path(), directory_name)
+    if (get_base_save_directory_path() != None):
+        full_path = os.path.join(get_base_save_directory_path(), directory_name)
         path = return_or_create_path(full_path)
         return (directory_name, path)
     else:
-        print("Save path is none")
-        pass
+        return
 
 
 # Get save sub-directory
@@ -100,9 +98,9 @@ def get_subdirectory():
     active_foreground_window = window.get_active_foreground_window()
     subdirectory_name = cleanup_name(active_foreground_window, 0)
     
-    if (get_save_directory_path() != None):
+    if (get_base_save_directory_path() != None):
         if (get_parent_directory()[0] == subdirectory_name):
-            full_path = os.path.join(get_save_directory_path(), subdirectory_name)
+            full_path = os.path.join(get_base_save_directory_path(), subdirectory_name)
             path = return_or_create_path(full_path)
             
             return path
@@ -113,8 +111,7 @@ def get_subdirectory():
         
             return path
     else:
-        print("Save path is none")
-        pass
+        return
     
     
 # Create the file name for the screenshot
