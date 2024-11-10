@@ -1,6 +1,6 @@
 # Screenshot Classifier App
 
-This is a Python-based screenshot classifier application that uses convolutional neural networks to identify whether an image is a screenshot or not.
+Automatically extra organize your screenshots on Windows in different folders and sub-folders based on the current active foreground window and application.
 
 ## Features
 
